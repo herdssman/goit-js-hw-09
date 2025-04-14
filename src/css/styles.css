@@ -16,3 +16,87 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style-type: none;
+  margin: 24px;
+  justify-content: center;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+
+.gallery-image:hover {
+  transform: scale(1.1);
+}
+
+.basicLightbox--modal {
+  background: rgba(46, 47, 66, 0.8);
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  margin-top: 16px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: start;
+  margin-left: 40px;
+  width: fit-content;
+  font-size: 16px;
+}
+
+input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding-left: 16px;
+  font-size: 16px;
+} 
+
+textarea {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 80px;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  padding-top: 8px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #4e75ff;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 40px;
+  transition: 250ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+button:hover {
+  background-color: #6c8cff;
+}
+
+input:hover,
+textarea:hover {
+  border-color: #000;
+}
